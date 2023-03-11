@@ -1,0 +1,11 @@
+#settings files
+*.json
+*.yml
+# IDEs
+.idea
+.vscode
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+#DB
+data/sql
