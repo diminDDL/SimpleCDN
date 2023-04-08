@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  simplecdn:
+    build: .
+    volumes:
+      - ./simplecdn/:/app/simplecdn/
+      - ./data/:/app/data/
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart:  "unless-stopped"
+    ports:
+      - "8000:8000"
+
+  # db:
+  #   image: mysql:8.0
+  #   restart: always
+  #   environment:
+  #     MYSQL_USER: simpleCDN
+  #     MYSQL_PASSWORD: simpleCDN
+  #     MYSQL_DATABASE: simpleCDN
+  #     MYSQL_ROOT_PASSWORD: simpleCDN

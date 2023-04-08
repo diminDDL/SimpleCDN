@@ -1,6 +1,3 @@
-#settings files
-*.json
-*.yml
 # IDEs
 .idea
 .vscode
